@@ -1,0 +1,148 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    
+    background-image: url(images/img.jpeg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Baloo Tamma 2", cursive;
+  }
+  
+  /* Main Heading Font */
+  .m-heading {
+    font-family: "Roboto Slab", serif;
+  }
+  
+  /* Navigation */
+  .navigation-link {
+    border: 2px solid transparent;
+  }
+  
+  .navigation-link:hover {
+    text-decoration: none;
+    border-bottom: 2px solid #f5ba09;
+    transition: 0.5s ease;
+  }
+  
+  /* Main Container height*/
+  .main-container {
+    height: 100vh;
+  }
+  
+  /* Aligning items in main row */
+  .main_row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Changing Name Font sixe */
+  .main_row h1 {
+    font-size: 5rem;
+  }
+  
+  /* Making the main image the size of the screen */
+  .main_row img {
+    width: auto;
+    height: 100vh;
+  }
+  
+  /* About Section */
+.about {
+    background: transparent;
+    border-radius: 0.5rem;
+  }
+  
+  .card {
+    border-bottom: 8px solid #f5ba09;
+  }
+  
+  /* Hobbies Section */
+  .skills {
+    background:transparent;
+    border-radius: 0.5rem;
+  }
+
+  .card {
+    border-bottom: 8px solid #f5ba09;
+  }
+
+  /* Social Media Section */
+  #social-media {
+    background: transparent;
+  }
+
+  
+  /* Add color to Social Media Links */
+  .media_link {
+    padding: 1rem;
+    max-width: 15rem;
+    margin-left: 1rem;
+    border: 2px solid #f5ba09;
+    border-radius: 0.5rem;
+  }
+
+  /* Profile */
+  .profile{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .rounded-circle-mail{
+    background-color: red;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.rounded-circle-fb{
+  background-color: #3A559F;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rounded-circle-insta{
+  background-color: #E1003E;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rounded-circle-fb{
+  background-color: #3A559F;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rounded-circle-twitter{
+  background-color: #1DA1F2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rounded-circle-linkedin{
+  background-color:#006CB2;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.rounded-circle-github{
+  background-color:black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+
