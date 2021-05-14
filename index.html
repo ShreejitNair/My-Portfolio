@@ -14,6 +14,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/custom_style.css">
+    <script src="script/bootstrap.js"></script>
+    <script src="script/script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -27,45 +32,50 @@
       rel="stylesheet"
     />
 
-    <title>Portfolio</title>
-  </head>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WT97GV5"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   <body>
-      <div class="container pt-2">
-          <div class="row">
-              <div class="col-4 d-flex justify-content-start allign-items-center">
-                <i class="fas fa-laptop-code" style= "font-size: 25px; color:white"></i>
-                <h5 class="text-white d-inline pl-2">My Portfolio</h5>
-
-              </div>
-              <div class="col-7 pt-0">
-                  <div class="row">
-                      <div class="col-2">
-                        <a href="#about" class="text-white navigation-link">About</a>
-                      </div>
-                      <div class="col-2">
-                        <a href="#skills" class="text-white navigation-link">Skills</a>
-                      </div>
-                      <div class="col-2">
-                        <a href="#projects" class="text-white navigation-link">Projects</a>
-                      </div>
-                      <div class="col-2">
-                        <a href="#education" class="text-white navigation-link">Education</a>
-                      </div>
-                      <div class="col-3">
-                        <a href="#social-media"class="text-white navigation-link">Social  Media</a>
-                      </div>
-                      <div class="col-1">
-                        <a href="#resume"class="text-white navigation-link">Resume</a>
-                      </div>
-                  </div>
-
-              </div>
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="myNAV">
+      <i class="fas fa-laptop-code mr-2" style= "font-size: 25px; color:white"></i>
+      <a class="navbar-brand" href="#Home">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#Home" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mr-2" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link mr-2" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#social-media">Social Media</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="#ContactMe">Contact Me</a>
+            </li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="bg-image img-fluid">
+      <div class="bg-image img-">
         <br id="Home"><br>
-        <img src="images/Shreejit.jpeg.JPG" class="profile">
+        <img src="images/Shreejit1.jpeg" class="profile">
         <br>
         <h3 class="text-center text-white">Hello, I'm</h3>
         <h2 class="text-center text-white">Shreejit Nair</h2>
@@ -115,45 +125,36 @@
       <!-- Projects Section -->
     <div id="projects" class="container mt-5 pt-5">
         <h2 class="text-warning mb-3 pb-2">My Projects</h2>
-        <div class="row">
-          <div class="col-6 mb-5">
-            <div class="card" style="width: 25rem;">
-              <img
-                src="images/news.gif"
-                class="card-img-top"
-                style="height: 10rem;"
-                alt="Django News Web App"
-              />
-              <div class="card-body">
+        <br>
+        <div class="container">
+          <div class="card-deck">
+            <div class="col-md-1"></div>
+            <div class="card" style="background-color: #1B264F;">
+              <img class="card-img-top" src="images/news.gif" alt="Django News Web App" style="width: inherit; height:150px;">
+              <div class="card-body text-center text-white">
                 <h5 class="card-title">News Web App</h5>
-                <p class="card-text">
-                    News Web App 📰 built using Python Django 🌐 and NewsAPI 🚀 Fetches latest news. 😍 
-                    It is a Progressive Web App (PWA) which enables users 👨‍👩‍👦 to install it on their 
-                    mobile phones 📱 (Android & iOS) as well as Desktop 💻 (Windows, Linux, etc.) 🔥
-                </p>
-                <a href="https://newswebapp.herokuapp.com/" class="btn btn-warning">See Project</a>
+                  <h6 class="card-subtitle mb-2">Oct, 2020 - Dec, 2020</h6>
+                  <h6 class="card-subtitle mb-2">Pune, Maharashtra</h6>
+                  <p class="text-center">_________________________________________</p>
+                  <p class="card-text">News Web App 📰 built using Python Django 🌐 and NewsAPI 🚀 Fetches latest news. 😍 It is a Progressive Web App (PWA) which enables users 👨‍👩‍👦 to install it on their mobile phones 📱 (Android & iOS) as well as Desktop 💻 (Windows, Linux, etc.) 🔥</p>
+                  <p class="card-text text">Find link to live project <a href="https://newswebapp.herokuapp.com/" target="_blank" class="text-warning">here</a> & source code <a href="https://github.com/Akash1362000/News-Web-App" target="_blank" class="text-warning">here</a></p>
               </div>
             </div>
-          </div>
-          <div class="col-4 mb-5">
-            <div class="card" style="width: 25rem;">
-              <img
-                src="images/Student.jpeg.jpeg"
-                class="card-img-top img-fluid"
-                alt="Student Management System"
-                style="height: 13rem;"
-              />
-              <div class="card-body">
+            <div class="col-md-1"></div>
+            <div class="card bg-warning">
+              <img class="card-img-top" src="images/Student.jpeg.jpeg" alt="Django Student Management System" style="width: inherit; height:150px;">
+              <div class="card-body text-center">
                 <h5 class="card-title">Student Management System</h5>
-                <p class="card-text">
-                    A modern Student Management System 👨‍🎓 with features like Interactive Dashboard 🤩
-                    Attendance Management 🏫Provide Feedback ✍ Result Generation 📜 Leave Application 🍂
-                </p>
-                <a href="https://student-management-webapp.herokuapp.com/" class="btn btn-warning">See Project</a>
-              </div>
+                    <h6 class="card-subtitle mb-2">Aug, 2020 - Nov, 2020</h6>
+                    <h6 class="card-subtitle mb-2">Pune, Maharashtra</h6>
+                    <p class="text-center">_________________________________________</p>
+                    <p class="card-text">A modern Student Management System 👨‍🎓 with features like Interactive Dashboard 🤩 Attendance Management 🏫Provide Feedback ✍ Result Generation 📜 Leave Application 🍂</p>
+                    <p class="card-text">Find link to live project <a href="https://student-management-webapp.herokuapp.com/" target="_blank">here</a> & source code <a href="https://github.com/Akash1362000/Django_Student_Management_System" target="_blank">here</a></p>
+                </div>
             </div>
+            <div class="col-md-1"></div>
           </div>
-        </div>
+          <br><br>
       </div>
 
       <!-- Education Section -->
